@@ -238,6 +238,25 @@ function erase() {
 
 document.addEventListener("DOMContentLoaded", function() {
     setTimeout(type, 1000);
+    // Dark Light Mode Toggle
+const toggle = document.getElementById('theme-toggle');
+const body = document.body;
+
+if(localStorage.getItem('theme') === 'light'){
+    body.classList.add('light-mode');
+    toggle.textContent = '☀️';
+}
+
+toggle.addEventListener('click', () => {
+    body.classList.toggle('light-mode');
+    if(body.classList.contains('light-mode')){
+        toggle.textContent = '☀️';
+        localStorage.setItem('theme', 'light');
+    } else {
+        toggle.textContent = '🌙';
+        localStorage.setItem('theme', 'dark');
+    }
+});
 });
 </script>
 </body>
