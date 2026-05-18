@@ -23,7 +23,11 @@ body {
   color: white;
   padding: 80px 20px;
 }
-
+/* PHOTO TEAL GLOW */
+.hero-img {
+  box-shadow: 0 0 30px #00d2ff;
+  border: 3px solid #00d2ff;
+}
 /* CARD HOVER */
 .card:hover {
   transform: translateY(-10px);
