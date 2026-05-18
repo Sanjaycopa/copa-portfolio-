@@ -1,0 +1,32 @@
+/* TEAL GRADIENT BG - ITI SITE JEVU */
+body {
+  margin: 0;
+  background: linear-gradient(135deg, #00d2ff 0%, #3a7bd5 100%);
+  min-height: 100vh;
+  font-family: 'Poppins', sans-serif;
+}
+
+/* HERO WHITE BOX */
+.hero-box {
+  background: white;
+  border-radius: 20px;
+  padding: 50px 30px;
+  max-width: 850px;
+  margin: 80px auto;
+  box-shadow: 0 10px 40px rgba(0,0,0,0.3);
+  text-align: center;
+}
+
+/* DARK SECTION */
+.about-section, .skills-section, .projects-section {
+  background: #0a0a0a;
+  color: white;
+  padding: 80px 20px;
+}
+
+/* CARD HOVER */
+.card:hover {
+  transform: translateY(-10px);
+  transition: 0.3s;
+  box-shadow: 0 15px 30px rgba(0, 210, 255, 0.4);
+}
